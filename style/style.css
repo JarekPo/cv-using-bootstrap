@@ -1,0 +1,86 @@
+body{
+	font-family: Helvetica;
+	color: #222222;
+	background-color: #f2f2f2;
+	margin: 0px 5% 5px;
+}
+.main-container{
+	display:flex;
+	flex-direction:column;
+}
+.skills-container{
+	display: flex;
+}
+.skills-box{
+	flex: 1;
+	background-color:#a8a800;
+	margin: 1px;
+	padding: 5px;
+}
+.header, .footer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+h2{
+	background-color:#a8a800;
+}
+h1, h2, .center{
+	text-align: center;
+	text-shadow: 2px 0px 3px #dddddd;
+}
+h3{
+	text-shadow: 2px 0px 3px #eeeeee;
+}
+span{
+	font-weight: bold;
+	text-decoration: underline;
+}
+ul{
+	list-style-type: circle;
+}
+.inner-links{
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
+	padding: 0;
+}
+.inner-links a{
+	text-decoration: none;
+	color: #777777;
+	margin: 7px;
+}
+.inner-links li a:hover{
+	color: #a8a800;
+	text-decoration: underline;
+}
+.external-links{
+	text-decoration: none;
+	color: #222222;
+}
+
+.external-links:hover{
+	color: #777777;
+	text-decoration: underline;
+}
+@media screen and (min-width:601px) and (max-width:800px){
+	.skills-container{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.skills-box{
+		flex:none;
+		flex-basis: 47%;
+	}
+}
+@media screen and (max-width: 600px) {
+	.skills-container{
+		flex-direction:column;
+	}
+}
+#my-picture{
+	height: 260px;
+	width: 200px;
+}
+
